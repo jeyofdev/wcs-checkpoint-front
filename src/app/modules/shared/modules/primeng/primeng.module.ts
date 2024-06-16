@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { NgModule } from "@angular/core";
+import { ButtonModule } from "primeng/button";
 
 @NgModule({
-  exports: [ButtonModule],
+	exports: [ButtonModule],
 })
 export class PrimengModule {}
