@@ -1,5 +1,5 @@
 <div class="category-list">
-  <ng-container *ngFor="let category of categories$ | async">
+  <ng-container *ngFor="let category of categoryList$ | async">
     <p-card [header]="category.name">
       <ng-template pTemplate="header">
         <img alt="Card" [src]="category.imgUrl" />
@@ -7,6 +7,7 @@
 
       <ng-template pTemplate="footer">
         <p-button
+          [routerLink]="['/category', category.id]"
           label="View"
           severity="secondary"
           class="btn-view"

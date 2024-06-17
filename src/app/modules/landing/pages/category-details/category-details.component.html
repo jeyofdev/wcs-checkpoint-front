@@ -1,0 +1,5 @@
+<app-layout>
+  <ng-container *ngIf="category$ | async as category">
+    <h1>{{ category.name }}</h1>
+  </ng-container>
+</app-layout>

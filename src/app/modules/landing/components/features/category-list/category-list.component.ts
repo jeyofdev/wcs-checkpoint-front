@@ -1,7 +1,7 @@
-// biome-ignore lint/style/useImportType: <explanation>
 import { Component, OnInit } from '@angular/core';
-// biome-ignore lint/style/useImportType: <explanation>
 import { CategoryService } from '@services/category.service';
+import { Category } from '@shared/models/classes/category.class';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-category-list',
@@ -9,11 +9,11 @@ import { CategoryService } from '@services/category.service';
   styleUrl: './category-list.component.scss',
 })
 export class CategoryListComponent implements OnInit {
-  categories$: any;
+  categoryList$!: Observable<Category[]>;
 
   constructor(private _categoryService: CategoryService) {}
 
   ngOnInit(): void {
-    this.categories$ = this._categoryService.getAllCategories();
+    this.categoryList$ = this._categoryService.getAllCategories$();
   }
 }
