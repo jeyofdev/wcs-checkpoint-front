@@ -1,14 +1,14 @@
 <app-layout>
   <div class="product-list">
-    <ng-container *ngFor="let category of productList$ | async">
-      <p-card [header]="category.name">
+    <ng-container *ngFor="let product of productList$ | async">
+      <p-card [header]="product.name">
         <ng-template pTemplate="header">
-          <img alt="Card" [src]="category.imgUrl" />
+          <img alt="Card" [src]="product.imgUrl" />
         </ng-template>
 
         <ng-template pTemplate="footer">
           <p-button
-            [routerLink]="['/category', category.id]"
+            [routerLink]="['/product', product.id]"
             label="View"
             severity="secondary"
             class="btn-view"

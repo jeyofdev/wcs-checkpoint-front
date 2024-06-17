@@ -19,7 +19,7 @@ export class HeaderNavbarComponent {
       {
         label: 'Products',
         icon: 'pi pi-star',
-        routerLink: '/',
+        routerLink: '/products',
       },
       {
         label: 'Stores',
@@ -27,7 +27,7 @@ export class HeaderNavbarComponent {
         routerLink: '/',
       },
       {
-        label: 'Contact',
+        label: 'Categories',
         icon: 'pi pi-envelope',
         routerLink: '/',
       },
