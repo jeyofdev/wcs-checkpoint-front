@@ -1,6 +1,26 @@
 <app-layout>
   <ng-container *ngIf="category$ | async as category">
     <img alt="Card" [src]="category.imgUrl" />
-    <h1>{{ category.name }}</h1>
+    <h1>{{ category.name }} ({{ category.products.length }})</h1>
+
+    <div class="product-list">
+      <ng-container *ngFor="let product of category.products">
+        <p-card [header]="product.name">
+          <ng-template pTemplate="header">
+            <img alt="Card" [src]="product.imgUrl" />
+          </ng-template>
+
+          <ng-template pTemplate="footer">
+            <p-button
+              [routerLink]="['/product', product.id]"
+              label="View"
+              severity="secondary"
+              class="btn-view"
+              styleClass="w-full"
+            />
+          </ng-template>
+        </p-card>
+      </ng-container>
+    </div>
   </ng-container>
 </app-layout>
