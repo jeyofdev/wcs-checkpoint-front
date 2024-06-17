@@ -18,18 +18,37 @@
   </ng-container>
 </div>
 
-<form #form="ngForm" (ngSubmit)="onSubmit()">
-  <div class="form-control">
-    <label>Name</label>
-    <input type="text" name="name" [(ngModel)]="newCategoryFrom.name" />
-  </div>
+<div class="add-container">
+  <h2>Add new category</h2>
 
-  <div class="form-control">
-    <label>Image url</label>
-    <input type="text" name="imgUrl" [(ngModel)]="newCategoryFrom.imgUrl" />
-  </div>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="name">Name : </label>
+      <input
+        pInputText
+        id="name"
+        name="name"
+        [(ngModel)]="newCategoryFrom.name"
+      />
+    </div>
 
-  <div>
-    <button type="submit">Save</button>
-  </div>
-</form>
+    <div class="form-control">
+      <label for="name">Image URL : </label>
+      <input
+        pInputText
+        id="imageUrl"
+        name="imageUrl"
+        [(ngModel)]="newCategoryFrom.imgUrl"
+      />
+    </div>
+
+    <div>
+      <p-button
+        label="Add new Category"
+        type="submit"
+        [raised]="true"
+        severity="secondary"
+      />
+    </div>
+  </form>
+</div>

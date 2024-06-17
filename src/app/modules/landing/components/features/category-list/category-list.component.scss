@@ -26,3 +26,40 @@
     padding: 0.4rem 1rem;
   }
 }
+
+:host ::ng-deep .add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .p-inputtext {
+      width: 100%;
+    }
+
+    p-button .p-button {
+      width: 100%;
+      padding: 0.4rem 1rem;
+    }
+  }
+}
