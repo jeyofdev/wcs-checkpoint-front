@@ -1,0 +1,18 @@
+<div class="category-list">
+  <ng-container *ngFor="let category of categories$ | async">
+    <p-card [header]="category.name">
+      <ng-template pTemplate="header">
+        <img alt="Card" [src]="category.imgUrl" />
+      </ng-template>
+
+      <ng-template pTemplate="footer">
+        <p-button
+          label="View"
+          severity="secondary"
+          class="btn-view"
+          styleClass="w-full"
+        />
+      </ng-template>
+    </p-card>
+  </ng-container>
+</div>
