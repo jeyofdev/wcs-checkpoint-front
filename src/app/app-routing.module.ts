@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/landing/landing.module').then((m) => m.LandingModule),
   },
+  {
+    path: RouteEnum.PRODUCT,
+    loadChildren: () =>
+      import('./modules/product/product.module').then((m) => m.ProductModule),
+  },
 ];
 
 @NgModule({

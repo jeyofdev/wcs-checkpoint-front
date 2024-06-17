@@ -7,8 +7,6 @@ import { CategoryListComponent } from './components/features/category-list/categ
 import { LandingRoutingModule } from './landing-routing.module';
 import { CategoryDetailsComponent } from './pages/category-details/category-details.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductListComponent } from './pages/product-list/product-list.component';
-import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,8 +14,6 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     CategoryListComponent,
     CategoryDetailsComponent,
-    ProductListComponent,
-    ProductDetailsComponent,
   ],
   imports: [
     CommonModule,

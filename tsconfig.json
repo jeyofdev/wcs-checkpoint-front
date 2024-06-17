@@ -23,6 +23,7 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@shared/*": ["app/modules/shared/*"],
+      "@product/*": ["app/modules/product/*"],
       "@directives/*": ["app/modules/shared/directive/*"],
       "@pipes/*": ["app/modules/shared/pipe/*"],
       "@utils/*": ["app/modules/shared/utils/*"],
