@@ -1,15 +1,5 @@
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
-  app-item-card {
-    width: calc(33.33333% - 1rem);
-  }
-}
-
 :host ::ng-deep p-card {
-  width: calc(25% - 1rem);
+  width: 100%;
 
   .p-card-header img {
     height: 250px;

@@ -1,20 +1,11 @@
 <div class="category-list">
   <ng-container *ngFor="let category of categoryList$ | async">
-    <p-card [header]="category.name">
-      <ng-template pTemplate="header">
-        <img alt="Card" [src]="category.imgUrl" />
-      </ng-template>
-
-      <ng-template pTemplate="footer">
-        <p-button
-          [routerLink]="['/category', category.id]"
-          label="View"
-          severity="secondary"
-          class="btn-view"
-          styleClass="w-full"
-        />
-      </ng-template>
-    </p-card>
+    <app-item-card
+      [name]="category.name"
+      [src]="category.imgUrl"
+      [link]="['/category', category.id]"
+    >
+    </app-item-card>
   </ng-container>
 </div>
 

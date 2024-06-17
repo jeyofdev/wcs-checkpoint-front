@@ -1,0 +1,15 @@
+<p-card [header]="name">
+  <ng-template pTemplate="header">
+    <img alt="Card" [src]="src" />
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <p-button
+      [routerLink]="link"
+      label="View"
+      severity="secondary"
+      class="btn-view"
+      styleClass="w-full"
+    />
+  </ng-template>
+</p-card>
