@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="layout-container">
+    <header>
+      <div class="logo-box">
+        <div>
+          <span>WOOD</span>
+          <span>HEAVER</span>
+        </div>
+      </div>
+
+      <nav class="nav-box">
+        <app-header-navbar></app-header-navbar>
+      </nav>
+
+      <div class="btns-box">
+        <p-button label="Login" [raised]="true" />
+        <p-button label="Register" [raised]="true" />
+        <p-button icon="pi pi-bell" severity="warning" />
+      </div>
+    </header>
+
+    <div>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

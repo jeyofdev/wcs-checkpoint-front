@@ -27,7 +27,8 @@
       "@pipes/*": ["app/modules/shared/pipe/*"],
       "@utils/*": ["app/modules/shared/utils/*"],
       "@form/*": ["app/modules/shared/form/*"],
-      "@services/*": ["app/modules/core/services*"]
+      "@services/*": ["app/modules/core/services*"],
+      "@enums/*": ["app/modules/shared/models/enums/*"]
     }
   },
   "angularCompilerOptions": {

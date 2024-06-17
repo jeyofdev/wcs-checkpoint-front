@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  min-height: 100vh;
+  margin: 0 1rem;
+
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    padding: 1rem;
+    box-shadow: 0px 0px 9px -5px black;
+  }
+}
+
+:host ::ng-deep header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  .logo-box {
+    > div {
+      span {
+        font-size: 3rem;
+        color: black;
+
+        &:last-child {
+          color: var(--orange-500);
+        }
+      }
+    }
+  }
+
+  .btns-box {
+    display: flex;
+    gap: 1rem;
+
+    .p-button.p-button-raised {
+      padding: 0.5rem 1.5rem;
+
+      .p-button-label {
+        font-weight: 400;
+      }
+    }
+
+    .p-button.p-button-warning {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}
