@@ -17,3 +17,19 @@
     </p-card>
   </ng-container>
 </div>
+
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="newCategoryFrom.name" />
+  </div>
+
+  <div class="form-control">
+    <label>Image url</label>
+    <input type="text" name="imgUrl" [(ngModel)]="newCategoryFrom.imgUrl" />
+  </div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>

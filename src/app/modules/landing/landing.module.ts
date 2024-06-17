@@ -9,6 +9,7 @@ import { CategoryDetailsComponent } from './pages/category-details/category-deta
 import { HomeComponent } from './pages/home/home.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,12 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
     ProductListComponent,
     ProductDetailsComponent,
   ],
-  imports: [CommonModule, LandingRoutingModule, LayoutModule, SharedModule],
+  imports: [
+    CommonModule,
+    LandingRoutingModule,
+    LayoutModule,
+    SharedModule,
+    FormsModule,
+  ],
 })
 export class LandingModule {}

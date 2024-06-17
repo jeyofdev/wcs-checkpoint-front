@@ -1,5 +1,6 @@
 <app-layout>
   <ng-container *ngIf="category$ | async as category">
+    <img alt="Card" [src]="category.imgUrl" />
     <h1>{{ category.name }}</h1>
   </ng-container>
 </app-layout>
