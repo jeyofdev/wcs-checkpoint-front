@@ -7,12 +7,14 @@ import { CategoryListComponent } from './components/features/category-list/categ
 import { LandingRoutingModule } from './landing-routing.module';
 import { CategoryDetailsComponent } from './pages/category-details/category-details.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProductListComponent } from './pages/product-list/product-list.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     CategoryListComponent,
     CategoryDetailsComponent,
+    ProductListComponent,
   ],
   imports: [CommonModule, LandingRoutingModule, LayoutModule, SharedModule],
 })
