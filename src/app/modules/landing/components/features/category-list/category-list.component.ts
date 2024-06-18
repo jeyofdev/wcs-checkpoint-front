@@ -31,6 +31,14 @@ export class CategoryListComponent implements OnInit {
       });
   }
 
+  onDeleteCategory(categoryId: number): void {
+    console.log('deleted');
+
+    // this._categoryService.deleteCategoryById$(categoryId).subscribe(() => {
+    //   this.refreshCategoryList();
+    // });
+  }
+
   private refreshCategoryList(): void {
     this.categoryList$ = this._categoryService.getAllCategories$();
   }

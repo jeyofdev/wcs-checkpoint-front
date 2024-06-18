@@ -1,6 +1,23 @@
 :host ::ng-deep p-card {
   width: 100%;
 
+  .p-card {
+    position: relative;
+  }
+
+  .p-card-header .p-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    .p-button-icon {
+      font-size: 1rem;
+    }
+  }
+
   .p-card-header img {
     height: 250px;
     object-fit: cover;

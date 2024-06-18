@@ -28,4 +28,10 @@ export class CategoryService {
       newCategory
     );
   }
+
+  deleteCategoryById$(categoryId: number): Observable<void> {
+    return this._httpClient.delete<void>(
+      `http://localhost:8080/api/v1/category/${categoryId}`
+    );
+  }
 }

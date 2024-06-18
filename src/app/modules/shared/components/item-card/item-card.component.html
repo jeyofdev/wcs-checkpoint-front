@@ -1,5 +1,12 @@
 <p-card [header]="name">
   <ng-template pTemplate="header">
+    <p-button
+      icon="pi pi-trash"
+      [rounded]="true"
+      severity="danger"
+      class="btn-delete"
+      (click)="onDelete()"
+    />
     <img alt="Card" [src]="src" />
   </ng-template>
 
@@ -9,7 +16,6 @@
       label="View"
       severity="secondary"
       class="btn-view"
-      styleClass="w-full"
     />
   </ng-template>
 </p-card>

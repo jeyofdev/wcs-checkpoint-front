@@ -4,6 +4,7 @@
       [name]="category.name"
       [src]="category.imgUrl"
       [link]="['/category', category.id]"
+      (delete)="onDeleteCategory(category.id)"
     >
     </app-item-card>
   </ng-container>

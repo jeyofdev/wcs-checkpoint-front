@@ -20,4 +20,10 @@ export class ProductService {
       `http://localhost:8080/api/v1/product/${productId}`
     );
   }
+
+  deleteProductById$(productId: number): Observable<void> {
+    return this._httpClient.delete<void>(
+      `http://localhost:8080/api/v1/product/${productId}`
+    );
+  }
 }
